@@ -1,0 +1,60 @@
+/******************* Variables *******************/
+$width: 960px;
+$main-color: #E8E8E8; 
+
+/******************* Global *********************/
+html,
+body,
+#container {
+	height: 100%; width: $width; margin: 0 auto;}
+
+/******************* Header *********************/
+#header{
+	height: 150px; border: 1px dashed; background: $main-color;
+	
+	span {visibility: hidden;}}
+
+/*Banner*/
+#banner{
+	/*background:url("/images/Play_Lab_Site_Logo.png") no-repeat; 
+	background-position: top center; */height: 90px; padding-bottom: 15px;
+	
+	h1 {width: width; line-height: 90px; margin-top: 0;}
+		
+		a {background:url("/images/Play_Lab_Site_Logo.png") no-repeat; display: block;
+		background-position: center;}}
+
+/*navigation bar*/
+#navigation {
+	border: 1px solid #fff; background: #00AEEF;
+	$num-of-nav-link: 3;
+	$nav-height: 44px;
+	$nav-line-height: $nav-height / 2;
+	$nav-link-width: ($width / $num-of-nav-link)-($num-of-nav-link + 2);
+	
+	.nav-link {border-right: 1px solid #fff; width: $nav-link-width; 
+	display: inline-block; height: $nav-height; text-align: center;
+		
+		h2 {line-height: $nav-line-height;
+			
+			a {text-decoration: none; color: #fff}
+
+			/*a:hover {background: #fff; color: #000;}*/}
+		
+		&:last-of-type {border-right: none;}}}
+
+/******************* Content *********************/
+#content{
+	$content-width: $width - 2;
+	border-left: 1px dashed; border-right: 1px dashed; border-bottom: 1px dashed;
+	background: $main-color; width: $content-width; min-height: 100%;
+	
+	h1 {
+	margin-top: 0;}}
+
+/* Index IMG */
+#img1 {
+	text-align: center; padding: 40px 0 20px 0;}
+#img1-info {
+	text-align: center;}
+

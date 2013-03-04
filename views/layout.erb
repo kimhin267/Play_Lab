@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Play Lab</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/style.css">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="banner" role="banner">
+					<h1><a href="/"><span>Play Lab</span></a></h1>
+				</div>
+
+				<div id="navigation" role="navigation">
+					<!-- change all links h2 tags to imgs -->
+					<div class="nav-link"><h2><a href="/about">About</a></h2></div>
+					<div class="nav-link"><h2><a href="/rates">Rates</a></h2></div>
+					<div class="nav-link"><h2><a href="/contact">Contact</a></h2></div>
+				</div>
+			</div>
+
+			<div id="content" role="main">
+
+				<%= yield %>
+
+			</div>
+
+			<div id="footer">
+
+			</div>
+		</div>
+	</body>
+</html>
